@@ -1,0 +1,39 @@
+.start-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.start-btn:checked + .perspective .iPhone {
+    animation: start-animation 100s linear;
+    /* transform: rotateX(30deg) rotateY(30deg) rotateZ(-15deg) scale(1) translateX(0) translateY(0); */
+}
+
+@keyframes start-animation {
+    0% {
+        transform: rotateZ(90deg) scale(5)
+    }
+    2% {
+        transform: rotateX(30deg) rotateY(30deg) rotateZ(-15deg);
+    }
+    2.5% {
+        transform: rotateX(30deg) rotateY(30deg) rotateZ(-15deg);
+    }
+    3% {
+        transform: rotateY(180deg);
+    }
+    3.5% {
+        transform: rotateY(90deg)  scale(1.5);
+    }
+    5.5% {
+        transform: rotateY(0deg) scale(2);
+    }
+    7.5% {
+        transform: rotateY(-90deg) scale(1.5);
+    }
+}
