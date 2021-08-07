@@ -1,0 +1,138 @@
+.back {
+    position: absolute;
+    width: 307px;
+    height: 633px;
+    background: linear-gradient(65deg, #43423e 52%, #72716d 80%, #bab9b1 160%);
+    border: 2px solid #c2c2c0;
+    border-radius: 46px;
+    box-shadow: inset 0 0 3px 3px #767571;
+    transform-style: preserve-3d;
+    transform: translateZ(-15px) rotateY(180deg);
+}
+
+.camera-group {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 128px;
+    height: 128px;
+    background: linear-gradient(65deg, #43423e 40%, #72716d 60%, #bab9b1 120%);
+    border-radius: 30px;
+    border: 2px solid #81807c;
+    box-shadow: inset 0 0 3px 1px;
+    transform-style: preserve-3d;
+}
+
+.camera {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+
+    
+    background: radial-gradient(#444444 1px, rgb(14, 27, 29) 5px, rgb(6, 6, 6) 18px, rgb(40, 50, 57) 22px);
+    border: 4px solid #474642;
+    box-shadow: 0 0 3px, inset 0 0 2px;
+}
+
+.camera > div {
+    width: 6px;
+    height: 6px;
+    background: radial-gradient(#E1E4F5 ,#0D2B69 33%);
+    background-position: -1px -1px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    border-radius: 50%;
+}
+
+.camera-wide {
+    left: 6px;
+    top: 6px;
+}
+
+.camera-tele-photo {
+    left: 6px;
+    bottom: 6px;
+}
+
+.camera-ultra-wide {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6px;
+    bottom: 6px;
+}
+
+.flash {
+    position: absolute;
+    right: 20px;
+    top: 6px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: radial-gradient(rgb(214, 200, 217) 2px, rgb(214, 200, 197) 9px, rgb(45, 72, 83) 14px);
+    box-shadow: 0 0 2px rgb(45, 72, 83), inset 0 0 2px rgb(45, 72, 83);
+}
+
+.mic {
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: rgb(6, 6, 6);
+    box-shadow: 0 0 2px rgb(45, 72, 83), inset 0 0 2px rgb(45, 72, 83);
+}
+
+.lidar {
+    position: absolute;
+    right: 20px;
+    bottom: 6px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: radial-gradient(#333 1px, rgb(14, 27, 29) 5px, rgb(6, 6, 6) 18px, rgb(40, 50, 57) 22px);
+    box-shadow: 0 0 2px rgb(45, 72, 83), inset 0 0 2px rgb(45, 72, 83);
+}
+
+.logo-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+.logo {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 145px;
+    height: 220px;
+    border-radius: 80% 70% 60% 90%/50% 50% 60% 100%;
+    background: #3e3c38;
+    transform: scale(.28);
+    transform-origin: 0 0;
+}
+
+.logo::after {
+    position: absolute;
+    content: '';
+    left: 97px;
+    width: 145px;
+    height: 220px;
+    border-radius: 70% 80% 90% 60% / 50% 50% 100% 60%;
+    background: #3e3c38;
+    -webkit-mask-image: radial-gradient(circle at 110% 38%, #000000 60px, #000000 20px);
+    mask-image: radial-gradient(circle at 110% 38%, #000000 60px, #000000 20px);
+}
+
+.logo::before {
+    position: absolute;
+    top: -70px;
+    left: 117px;
+    width: 60px;
+    height: 68px;
+    background-color: #3e3c38;
+    content: '';
+    border-radius: 100% 0;
+}
