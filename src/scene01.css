@@ -1,0 +1,286 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  40% {
+    opacity: 0.6;
+    transform: scale(1.6);
+  }
+  60% {
+    opacity: 0.2;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+.scene01 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color);
+}
+.circle-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: fadeInUp;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+@keyframes fadeInAndScaleThenFadeOut {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+}
+.scenne01-apple-logo {
+  background: #e3a541;
+  background: linear-gradient(#e3a541, #ce8e28, #c46e14);
+  width: 208px;
+  height: 198px;
+  position: absolute;
+  border-radius: 35% 35% 41% 41% / 42% 42% 75% 75%;
+  animation-name: fadeInAndScaleThenFadeOut;
+  animation-duration: 10s;
+  animation-delay: 7s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.scenne01-apple-logo:before {
+  background: #e3a541;
+  content: "";
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  margin: -51px 0 0 100px;
+  border-radius: 100px 0;
+  z-index: 5;
+}
+
+.scenne01-apple-logo:after {
+  background: --background-color;
+  content: "";
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  margin: 28px 0 0 174px;
+  border-radius: 50%;
+  z-index: 4;
+  box-shadow: -127px -109.5px 0 var(--background-color),
+    -118px -107px 0 var(--background-color),
+    -115.5px -102.5px 0 var(--background-color),
+    -105.5px -109.5px 0 var(--background-color),
+    -105px -109.5px 0 var(--background-color),
+    -129px 166px 0 var(--background-color),
+    -107.5px 166px 0 var(--background-color),
+    -119px 161px 0 var(--background-color);
+}
+.scene-circle {
+  position: absolute;
+}
+.shadow-circle1 {
+  width: 40vw;
+  height: 40vw;
+  overflow: hidden;
+  border-radius: 50%;
+  background: rgb(42, 17, 7);
+  /*  radial-gradient(rgb(42, 17, 7), rgba(244, 204, 108, 1)); */
+  box-shadow: inset 0px 0px 40px rgba(244, 204, 108, 1),
+    inset 0px 0px 100px rgba(157, 101, 50, 1),
+    inset 0px 0px 200px rgba(244, 204, 108, 1);
+}
+@keyframes moving {
+  0% {
+    opacity: 1;
+    transform: translate3d(-40vw, 40vw, 0);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+    transform: translate3d(100vw, -130vw, 0);
+  }
+}
+.moving-shadow {
+  width: 80vw;
+  height: 80vw;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate3d(-40vw, 40vw, 0);
+  background: rgba(5, 13, 37, 1);
+  filter: blur(3vw);
+  box-shadow: 0 0 5vw 10vw rgba(5, 13, 37, 1),
+    0 0 10vw 10vw rgba(45, 87, 128, 1);
+  animation-name: moving;
+  /* +2 */
+  animation-delay: 1.5s;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.shadow-circle2 {
+  width: 70vw;
+  height: 70vw;
+  top: 2vw;
+  border-radius: 50%;
+  background-color: rgb(42, 17, 7);
+  background-image: linear-gradient(
+      300deg,
+      rgba(244, 204, 108, 1) 0%,
+      transparent 30%
+    ),
+    linear-gradient(110deg, rgb(27 116 130) 0%, transparent 20%)
+      /*  radial-gradient(rgb(42, 17, 7), rgba(244, 204, 108, 1)); */;
+  box-shadow: inset 0px 0px 40px rgba(171, 154, 121, 1),
+    inset 0px 0px 100px rgba(86, 71, 53, 1),
+    inset 0px 0px 200px rgba(51, 39, 24, 1);
+}
+.shadow-circle3 {
+  width: 100vw;
+  height: 100vw;
+  border-radius: 50%;
+  background: rgb(10, 10, 12);
+  /*  radial-gradient(rgb(42, 17, 7), rgba(244, 204, 108, 1)); */
+  box-shadow: inset 0px 0px 40px rgba(39, 54, 91, 1),
+    inset 0px 0px 100px rgba(27, 36, 51, 1),
+    inset 0px 0px 200px rgba(15, 13, 9, 1);
+}
+.title-release {
+  transform: translateY(135px);
+  font-size: 30px;
+}
+
+.title-release,
+.title-release > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.title-release > span {
+  margin: 0 15px;
+}
+.title-release > span > span {
+  display: inline-block;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.title-release > span > span > span {
+  display: inline-block;
+  color: hsla(0, 0%, 0%, 0);
+  /* debug */
+  /* color: rgb(250, 250, 250); */
+  transform-style: preserve-3d;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  animation-name: OpeningSequence;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-delay: 7s;
+}
+
+/* .title-release:nth-child(2) > span > span > span {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.title-release:nth-child(3) > span > span > span {
+  -webkit-animation-delay: 10s;
+  -moz-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.title-release:nth-child(4) > span > span > span {
+  -webkit-animation-delay: 15s;
+  -moz-animation-delay: 15s;
+  animation-delay: 15s;
+}
+
+.title-release:nth-child(5) > span > span > span {
+  font-size: 150px;
+  -webkit-animation-delay: 21s;
+  -moz-animation-delay: 21s;
+  animation-delay: 21s;
+  -webkit-animation-duration: 8s;
+  -moz-animation-duration: 8s;
+  animation-duration: 8s;
+}
+
+.title-release:nth-child(6) > span > span > span {
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  animation-delay: 30s;
+}
+
+.title-release:nth-child(7) > span > span > span {
+  -webkit-animation-delay: 34s;
+  -moz-animation-delay: 34s;
+  animation-delay: 34s;
+} */
+
+@keyframes OpeningSequence {
+  0% {
+    text-shadow: 0 0 50px #fff;
+    letter-spacing: 80px;
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+  }
+  50% {
+    text-shadow: 0 0 1px #fff;
+    letter-spacing: 14px;
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+  }
+  75% {
+    text-shadow: 0 0 1px #fff;
+    letter-spacing: 14px;
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+  }
+  85% {
+    text-shadow: 0 0 1px #fff;
+    opacity: 1;
+    -webkit-transform: rotateY(0deg) translateZ(100px);
+  }
+  100% {
+    text-shadow: 0 0 10px #fff;
+    opacity: 0;
+    -webkit-transform: translateZ(130px);
+    pointer-events: none;
+  }
+}

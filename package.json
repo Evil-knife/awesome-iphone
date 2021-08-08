@@ -1,0 +1,24 @@
+{
+  "name": "awesome-iphone",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Welcome to awesome-iphone 👋</h1> <p> </p>",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "start": "http-server -c-1 -d -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evil-knife/awesome-iphone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evil-knife/awesome-iphone/issues"
+  },
+  "homepage": "https://github.com/Evil-knife/awesome-iphone#readme"
+}

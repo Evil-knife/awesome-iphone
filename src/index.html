@@ -1,119 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS iPhone</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./front.css">
-    <link rel="stylesheet" href="./side.css">
-    <link rel="stylesheet" href="./back.css">
-    <link rel="stylesheet" href="./startAnimation.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./variable.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./scene01.css" />
+    <link rel="stylesheet" href="./scene02.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./front.css" />
+    <link rel="stylesheet" href="./side.css" />
+    <link rel="stylesheet" href="./back.css" />
+    <link rel="stylesheet" href="./startAnimation.css" />
+  </head>
+  <body>
     <section class="container">
-        <input type="checkbox" class="start-btn"/>
-        <div class="perspective">
-            <div class="iPhone">
-                <div class="back">
-                    <div class="camera-group">
-                        <div class="camera camera-wide"><div></div></div>
-                        <div class="camera camera-tele-photo"><div></div></div>
-                        <div class="camera camera-ultra-wide"><div></div></div>
-                        <div class="flash"></div>
-                        <div class="mic"></div>
-                        <div class="lidar"></div>
-                    </div>
-                    <div class="logo-box">
-                        <div class="logo"></div>
-                    </div>
-                </div>
-                <div class="front">
-                    <div class="front-camera-container">
-                        <div class="front-camera"></div>
-                        <div class="receiver"></div>
-                    </div>
-                    <div class="screen">
-                        <div class="circle-4"></div>
-                        <div class="circle-3"></div>
-                        <div class="circle-2"></div>
-                        <div class="circle-1"></div>
-                    </div>
-                </div>
-                <div class="left side">
-                    <div class="switch2 switch-extra"></div>
-                    <div class="switch switch-extra"></div>
-                    <div class="switch switch-extra" style="top: 140px;"></div>
-                    <div class="slot"></div>
-                </div>
-                <div class="right side">
-                    <div class="switch switch-extra" style="top: 120px;height: 70px;"></div>
-                </div>
-                <div class="top side2"></div>
-                <div class="bottom side2">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot m-r-10"></div>
-                    <div class="dot"></div>
-                    <div class="dot" style="width: 36px;"></div>
-                    <div class="dot m-r-10"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-                <div class="lt-radius">
-                    <div class="pad-radius0 pad-radius"></div>
-                    <div class="pad-radius1 pad-radius"></div>
-                    <div class="pad-radius2 pad-radius"></div>
-                    <div class="pad-radius3 pad-radius"></div>
-                    <div class="pad-radius4 pad-radius"></div>
-                    <div class="pad-radius5 pad-radius"></div>
-                    <div class="pad-radius6 pad-radius"></div>
-                    <div class="pad-radius7 pad-radius"></div>
-                    <div class="pad-radius8 pad-radius"></div>
-                    <div class="pad-radius9 pad-radius"></div>
-                </div>
-                <div class="lt-radius rt-radius">
-                    <div class="pad-radius0 pad-radius"></div>
-                    <div class="pad-radius1 pad-radius"></div>
-                    <div class="pad-radius2 pad-radius"></div>
-                    <div class="pad-radius3 pad-radius"></div>
-                    <div class="pad-radius4 pad-radius"></div>
-                    <div class="pad-radius5 pad-radius"></div>
-                    <div class="pad-radius6 pad-radius"></div>
-                    <div class="pad-radius7 pad-radius"></div>
-                    <div class="pad-radius8 pad-radius"></div>
-                    <div class="pad-radius9 pad-radius"></div>
-                </div>
-                <div class="lt-radius lb-radius">
-                    <div class="pad-radius0 pad-radius"></div>
-                    <div class="pad-radius1 pad-radius"></div>
-                    <div class="pad-radius2 pad-radius"></div>
-                    <div class="pad-radius3 pad-radius"></div>
-                    <div class="pad-radius4 pad-radius"></div>
-                    <div class="pad-radius5 pad-radius"></div>
-                    <div class="pad-radius6 pad-radius"></div>
-                    <div class="pad-radius7 pad-radius"></div>
-                    <div class="pad-radius8 pad-radius"></div>
-                    <div class="pad-radius9 pad-radius"></div>
-                </div>
-                <div class="lt-radius rb-radius">
-                    <div class="pad-radius0 pad-radius"></div>
-                    <div class="pad-radius1 pad-radius"></div>
-                    <div class="pad-radius2 pad-radius"></div>
-                    <div class="pad-radius3 pad-radius"></div>
-                    <div class="pad-radius4 pad-radius"></div>
-                    <div class="pad-radius5 pad-radius"></div>
-                    <div class="pad-radius6 pad-radius"></div>
-                    <div class="pad-radius7 pad-radius"></div>
-                    <div class="pad-radius8 pad-radius"></div>
-                    <div class="pad-radius9 pad-radius"></div>
-                </div>
-            </div>
+      <audio autoplay loop controls style="position: absolute; z-index: 100">
+        <source src="./media/small-bg.m4a" />
+      </audio>
+      <input type="checkbox" class="start-btn" />
+      <div class="scene01">
+        <div class="circle-box">
+          <div class="scene-circle shadow-circle3"></div>
+          <div class="scene-circle shadow-circle2"></div>
+          <div class="scene-circle shadow-circle1">
+            <div class="moving-shadow"></div>
+          </div>
         </div>
+        <div class="scenne01-apple-logo"></div>
+        <h2 class="title-release" style="opacity: 1">
+          <span class="word1"
+            ><span class="char1"><span class="char1">I</span></span
+            ><span class="char2"><span class="char1">P</span></span
+            ><span class="char3"><span class="char1">H</span></span
+            ><span class="char4"><span class="char1">O</span></span
+            ><span class="char5"><span class="char1">H</span></span
+            ><span class="char6"><span class="char1">E</span></span
+            ><span class="char7"><span class="char1">1</span></span
+            ><span class="char8"><span class="char1">3</span></span>
+          </span>
+          <span class="word2">
+            <span class="char1"><span class="char1">C</span></span
+            ><span class="char2"><span class="char1">O</span></span
+            ><span class="char3"><span class="char1">M</span></span
+            ><span class="char4"><span class="char1">I</span></span>
+            <span class="char5"><span class="char1">N</span></span>
+            <span class="char6"><span class="char1">G</span></span>
+          </span>
+        </h2>
+      </div>
+      <div class="scene02">
+        <div class="animation-wrapper">
+          <div class="particle particle-1"></div>
+          <div class="particle particle-2"></div>
+          <div class="particle particle-3"></div>
+          <div class="particle particle-4"></div>
+        </div>
+      </div>
+
+      <div class="scene03 perspective">
+        <div class="iPhone">
+          <div class="back">
+            <div class="camera-group">
+              <div class="camera camera-wide"><div></div></div>
+              <div class="camera camera-tele-photo"><div></div></div>
+              <div class="camera camera-ultra-wide"><div></div></div>
+              <div class="flash"></div>
+              <div class="mic"></div>
+              <div class="lidar"></div>
+            </div>
+            <div class="logo-box">
+              <div class="logo"></div>
+            </div>
+          </div>
+          <div class="front">
+            <div class="front-camera-container">
+              <div class="front-camera"></div>
+              <div class="receiver"></div>
+            </div>
+            <div class="screen">
+              <div class="circle-4"></div>
+              <div class="circle-3"></div>
+              <div class="circle-2"></div>
+              <div class="circle-1"></div>
+            </div>
+          </div>
+          <div class="left side">
+            <div class="switch2 switch-extra"></div>
+            <div class="switch switch-extra"></div>
+            <div class="switch switch-extra" style="top: 140px"></div>
+            <div class="slot"></div>
+          </div>
+          <div class="right side">
+            <div
+              class="switch switch-extra"
+              style="top: 120px; height: 70px"
+            ></div>
+          </div>
+          <div class="top side2"></div>
+          <div class="bottom side2">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot m-r-10"></div>
+            <div class="dot"></div>
+            <div class="dot" style="width: 36px"></div>
+            <div class="dot m-r-10"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="lt-radius">
+            <div class="pad-radius0 pad-radius"></div>
+            <div class="pad-radius1 pad-radius"></div>
+            <div class="pad-radius2 pad-radius"></div>
+            <div class="pad-radius3 pad-radius"></div>
+            <div class="pad-radius4 pad-radius"></div>
+            <div class="pad-radius5 pad-radius"></div>
+            <div class="pad-radius6 pad-radius"></div>
+            <div class="pad-radius7 pad-radius"></div>
+            <div class="pad-radius8 pad-radius"></div>
+            <div class="pad-radius9 pad-radius"></div>
+          </div>
+          <div class="lt-radius rt-radius">
+            <div class="pad-radius0 pad-radius"></div>
+            <div class="pad-radius1 pad-radius"></div>
+            <div class="pad-radius2 pad-radius"></div>
+            <div class="pad-radius3 pad-radius"></div>
+            <div class="pad-radius4 pad-radius"></div>
+            <div class="pad-radius5 pad-radius"></div>
+            <div class="pad-radius6 pad-radius"></div>
+            <div class="pad-radius7 pad-radius"></div>
+            <div class="pad-radius8 pad-radius"></div>
+            <div class="pad-radius9 pad-radius"></div>
+          </div>
+          <div class="lt-radius lb-radius">
+            <div class="pad-radius0 pad-radius"></div>
+            <div class="pad-radius1 pad-radius"></div>
+            <div class="pad-radius2 pad-radius"></div>
+            <div class="pad-radius3 pad-radius"></div>
+            <div class="pad-radius4 pad-radius"></div>
+            <div class="pad-radius5 pad-radius"></div>
+            <div class="pad-radius6 pad-radius"></div>
+            <div class="pad-radius7 pad-radius"></div>
+            <div class="pad-radius8 pad-radius"></div>
+            <div class="pad-radius9 pad-radius"></div>
+          </div>
+          <div class="lt-radius rb-radius">
+            <div class="pad-radius0 pad-radius"></div>
+            <div class="pad-radius1 pad-radius"></div>
+            <div class="pad-radius2 pad-radius"></div>
+            <div class="pad-radius3 pad-radius"></div>
+            <div class="pad-radius4 pad-radius"></div>
+            <div class="pad-radius5 pad-radius"></div>
+            <div class="pad-radius6 pad-radius"></div>
+            <div class="pad-radius7 pad-radius"></div>
+            <div class="pad-radius8 pad-radius"></div>
+            <div class="pad-radius9 pad-radius"></div>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
