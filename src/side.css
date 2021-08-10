@@ -1,236 +1,237 @@
 /** 左右两侧 */
 .side {
-    position: absolute;
-    width: 30px;
-    height: 541px;
-    background: #d5d1cc;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  width: 30px;
+  height: 541px;
+  background: #d5d1cc;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .side::before {
-    position: absolute;
-    top: 5px;
-    width: 100%;
-    height: 5px;
-    background: #f7f4ec;
-    content: '';
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  height: 5px;
+  background: #f7f4ec;
+  content: '';
 }
 
 .side::after {
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    height: 5px;
-    background: #f7f4ec;
-    content: '';
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 5px;
+  background: #f7f4ec;
+  content: '';
 }
 
 .left {
-    position: absolute;
-    transform: translateX(-155px) rotateY(-90deg);
+  position: absolute;
+  transform: translateX(-155px) rotateY(-90deg);
 }
 
 .right {
-    position: absolute;
-    transform: translateX(155px) rotateY(90deg);
+  position: absolute;
+  transform: translateX(155px) rotateY(90deg);
 }
 
 .slot {
-    position: absolute;
-    bottom: 60px;
-    width: 9px;
-    height: 70px;
-    border: solid 1px #999;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
+  position: absolute;
+  bottom: 60px;
+  width: 9px;
+  height: 70px;
+  border: solid 1px #999;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .slot::before {
-    position: absolute;
-    bottom: 10px;
-    width: 5px;
-    height: 5px;
-    content: '';
-    background: #000;
-    border-radius: 2px;
+  position: absolute;
+  bottom: 10px;
+  width: 5px;
+  height: 5px;
+  content: '';
+  background: #000;
+  border-radius: 2px;
 }
 
 .switch {
-    position: absolute;
-    top: 80px;
-    width: 8px;
-    height: 50px;
-    border-radius: 4px;
-    background: #d5d1cc;
-    box-shadow: 1px 1px 2px, -1px -1px 2px rgb(167, 190, 204);
+  position: absolute;
+  top: 80px;
+  width: 8px;
+  height: 50px;
+  border-radius: 4px;
+  background: #d5d1cc;
+  box-shadow: 1px 1px 2px, -1px -1px 2px rgb(167, 190, 204);
 }
 
 .switch2 {
-    position: absolute;
-    top: 32px;
-    width: 5px;
-    height: 30px;
-    border-radius: 4px;
-    border: solid 1px rgb(117, 140, 154);
-    border-left: 2px solid #d5d1cc;
-    background: rgb(37, 63, 76);
-    box-shadow: 1px 1px 2px, -1px -1px 2px rgb(167, 190, 204);
+  position: absolute;
+  top: 32px;
+  width: 5px;
+  height: 30px;
+  border-radius: 4px;
+  border: solid 1px rgb(117, 140, 154);
+  border-left: 2px solid #d5d1cc;
+  background: rgb(37, 63, 76);
+  box-shadow: 1px 1px 2px, -1px -1px 2px rgb(167, 190, 204);
 }
 
 .switch-extra {
-    transform-style: preserve-3d;
-    transform: translateZ(3px);
+  transform-style: preserve-3d;
+  transform: translateZ(3px);
 }
 
 .switch-extra::before {
-    position: absolute;
-    left: 0;
-    top: 5%;
-    height: 90%;
-    width: 3px;
-    background: #d5d1cc;
-    content: '';
-    transform-origin: left center;
-    transform: rotateY(90deg);
+  position: absolute;
+  left: 0;
+  top: 5%;
+  height: 90%;
+  width: 3px;
+  background: #d5d1cc;
+  content: '';
+  transform-origin: left center;
+  transform: rotateY(90deg);
 }
 
 .switch-extra::after {
-    position: absolute;
-    left: 0;
-    top: 2%;
-    height: 96%;
-    width: 3px;
-    background: #d5d1cc;
-    content: '';
-    transform-origin: right center;
-    transform: rotateY(-90deg);
+  position: absolute;
+  left: 0;
+  top: 2%;
+  height: 96%;
+  width: 3px;
+  background: #d5d1cc;
+  content: '';
+  transform-origin: right center;
+  transform: rotateY(-90deg);
 }
 
 /** 左右两侧结束 */
 
-.top, .bottom {
-    position: absolute;
-    width: 215px;
-    height: 30px;
-    background: #d5d1cc;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.top,
+.bottom {
+  position: absolute;
+  width: 215px;
+  height: 30px;
+  background: #d5d1cc;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /** 顶部 */
 .top {
-    transform: translateY(-317px) rotateX(90deg);
+  transform: translateY(-317px) rotateX(90deg);
 }
 
 .bottom::before {
-    position: absolute;
-    left: 5px;
-    width: 5px;
-    height: 100%;
-    background: #f7f4ec;
-    content: '';
+  position: absolute;
+  left: 5px;
+  width: 5px;
+  height: 100%;
+  background: #f7f4ec;
+  content: '';
 }
 
 .top::after {
-    position: absolute;
-    right: 5px;
-    width: 5px;
-    height: 100%;
-    background: #f7f4ec;
-    content: '';
+  position: absolute;
+  right: 5px;
+  width: 5px;
+  height: 100%;
+  background: #f7f4ec;
+  content: '';
 }
 
 /** 顶部结束 */
 /** 底部 */
 .bottom {
-    display: flex;
-    justify-content: center;
-    transform: translateY(317px) rotateX(-90deg);
+  display: flex;
+  justify-content: center;
+  transform: translateY(317px) rotateX(-90deg);
 }
 
 .dot {
-    width: 6px;
-    height: 6px;
-    background: black;
-    border-radius: 3px;
-    margin-right: 3px;
-    box-shadow: 1px 1px 1px #eee;
+  width: 6px;
+  height: 6px;
+  background: black;
+  border-radius: 3px;
+  margin-right: 3px;
+  box-shadow: 1px 1px 1px #eee;
 }
 
 /** 底部结束 */
 /** 圆角填充 圆角半径46px*/
-.pad-radius {
-    position: absolute;
-    width: 30px;
-    height: 9px;
-    background: #d5d1cc;
+.phone-radius {
+  position: absolute;
+  width: 30px;
+  height: 9px;
+  background: #d5d1cc;
 }
 
-.pad-radius0 {
-    transform: rotateY(-90deg) rotateX(0deg) translateZ(48px);
+.phone-radius0 {
+  transform: rotateY(-90deg) rotateX(0deg) translateZ(48px);
 }
 
-.pad-radius1 {
-    transform: rotateY(-90deg) rotateX(10deg) translateZ(48px);
+.phone-radius1 {
+  transform: rotateY(-90deg) rotateX(10deg) translateZ(48px);
 }
 
-.pad-radius2 {
-    transform: rotateY(-90deg) rotateX(20deg) translateZ(48px);
+.phone-radius2 {
+  transform: rotateY(-90deg) rotateX(20deg) translateZ(48px);
 }
 
-.pad-radius3 {
-    transform: rotateY(-90deg) rotateX(30deg) translateZ(48px);
+.phone-radius3 {
+  transform: rotateY(-90deg) rotateX(30deg) translateZ(48px);
 }
 
-.pad-radius4 {
-    transform: rotateY(-90deg) rotateX(40deg) translateZ(48px);
+.phone-radius4 {
+  transform: rotateY(-90deg) rotateX(40deg) translateZ(48px);
 }
 
-.pad-radius5 {
-    transform: rotateY(-90deg) rotateX(50deg) translateZ(48px);
+.phone-radius5 {
+  transform: rotateY(-90deg) rotateX(50deg) translateZ(48px);
 }
 
-.pad-radius6 {
-    transform: rotateY(-90deg) rotateX(60deg) translateZ(48px);
+.phone-radius6 {
+  transform: rotateY(-90deg) rotateX(60deg) translateZ(48px);
 }
 
-.pad-radius7 {
-    transform: rotateY(-90deg) rotateX(70deg) translateZ(48px);
+.phone-radius7 {
+  transform: rotateY(-90deg) rotateX(70deg) translateZ(48px);
 }
 
-.pad-radius8 {
-    transform: rotateY(-90deg) rotateX(80deg) translateZ(48px);
+.phone-radius8 {
+  transform: rotateY(-90deg) rotateX(80deg) translateZ(48px);
 }
 
-.pad-radius9 {
-    transform: rotateY(-90deg) rotateX(90deg) translateZ(48px);
+.phone-radius9 {
+  transform: rotateY(-90deg) rotateX(90deg) translateZ(48px);
 }
 
 .lt-radius {
-    position: absolute;
-    width: 0;
-    height: 0;
-    transform-style: preserve-3d;
-    transform: translate3d(-107px, -269px, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  width: 0;
+  height: 0;
+  transform-style: preserve-3d;
+  transform: translate3d(-107px, -269px, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lt-radius.rt-radius {
-    transform: translate3d(107px, -269px, 0) rotateZ(90deg);
+  transform: translate3d(107px, -269px, 0) rotateZ(90deg);
 }
 
 .lt-radius.lb-radius {
-    transform: translate3d(-107px, 269px, 0) rotateZ(-90deg);
+  transform: translate3d(-107px, 269px, 0) rotateZ(-90deg);
 }
 
 .lt-radius.rb-radius {
-    transform: translate3d(107px, 269px, 0) rotateZ(180deg);
+  transform: translate3d(107px, 269px, 0) rotateZ(180deg);
 }

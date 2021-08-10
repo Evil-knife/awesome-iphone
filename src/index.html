@@ -1,170 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS iPhone</title>
-    <link rel="stylesheet" href="./variable.css" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./scene01.css" />
-    <link rel="stylesheet" href="./scene02.css" />
-    <link rel="stylesheet" href="./scene03.css" />
-    <link rel="stylesheet" href="./front.css" />
-    <link rel="stylesheet" href="./side.css" />
-    <link rel="stylesheet" href="./back.css" />
-    <link rel="stylesheet" href="./startAnimation.css" />
-  </head>
-  <body>
-    <section class="container">
-      <audio autoplay loop controls style="position: absolute; z-index: 10000">
-        <source src="./media/bg-music.mp3" />
-      </audio>
-      <input type="checkbox" class="start-btn" />
-      <div class="scene01">
-        <div class="circle-box">
-          <div class="scene-circle shadow-circle3"></div>
-          <div class="scene-circle shadow-circle2"></div>
-          <div class="scene-circle shadow-circle1">
-            <div class="moving-shadow"></div>
-          </div>
-        </div>
-        <div class="scenne01-apple-logo"></div>
-        <h2 class="title-release" style="opacity: 1">
-          <span class="word1"
-            ><span class="char1"><span class="char1">I</span></span
-            ><span class="char2"><span class="char1">P</span></span
-            ><span class="char3"><span class="char1">H</span></span
-            ><span class="char4"><span class="char1">O</span></span
-            ><span class="char5"><span class="char1">H</span></span
-            ><span class="char6"><span class="char1">E</span></span
-            ><span class="char7"><span class="char1">1</span></span
-            ><span class="char8"><span class="char1">3</span></span>
-          </span>
-          <span class="word2">
-            <span class="char1"><span class="char1">C</span></span
-            ><span class="char2"><span class="char1">O</span></span
-            ><span class="char3"><span class="char1">M</span></span
-            ><span class="char4"><span class="char1">I</span></span>
-            <span class="char5"><span class="char1">N</span></span>
-            <span class="char6"><span class="char1">G</span></span>
-          </span>
-        </h2>
-      </div>
-      <div class="scene02">
-        <div class="animation-wrapper">
-          <div class="particle particle-1"></div>
-          <div class="particle particle-2"></div>
-          <div class="particle particle-3"></div>
-          <div class="particle particle-4"></div>
-        </div>
-      </div>
 
-      <div class="scene03 perspective">
-        <div class="iPhone">
-          <div class="back">
-            <div class="camera-group">
-              <div class="camera camera-wide"><div></div></div>
-              <div class="camera camera-tele-photo"><div></div></div>
-              <div class="camera camera-ultra-wide"><div></div></div>
-              <div class="flash"></div>
-              <div class="mic"></div>
-              <div class="lidar"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS iPhone</title>
+  <link rel="stylesheet" href="./variable.css" />
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./scene01.css" />
+  <link rel="stylesheet" href="./scene02.css" />
+  <link rel="stylesheet" href="./scene03.css" />
+  <link rel="stylesheet" href="./front.css" />
+  <link rel="stylesheet" href="./side.css" />
+  <link rel="stylesheet" href="./back.css" />
+  <link rel="stylesheet" href="./startAnimation.css" />
+  <link rel="stylesheet" href="./animation-start.css">
+  <link rel="stylesheet" href="./animation-introduce.css">
+  <link rel="stylesheet" href="./animation-unlock.css">
+  <link rel="stylesheet" href="./animation-siri.css">
+</head>
+
+<body>
+  <section class="container">
+    <audio autoplay loop controls style="position: absolute; z-index: 10000">
+      <source src="./media/bg-music.mp3" />
+    </audio>
+    <input type="checkbox" class="start-btn" />
+    <input type="checkbox" class="introduce-btn" />
+    <input type="checkbox" class="unlock-btn" />
+    <input type="checkbox" class="siri-btn" />
+    <div class="scene01">
+      <div class="circle-box">
+        <div class="scene-circle shadow-circle3"></div>
+        <div class="scene-circle shadow-circle2"></div>
+        <div class="scene-circle shadow-circle1">
+          <div class="moving-shadow"></div>
+        </div>
+      </div>
+      <div class="scenne01-apple-logo"></div>
+      <h2 class="title-release" style="opacity: 1">
+        <span class="word1"><span class="char1"><span class="char1">I</span></span><span class="char2"><span
+              class="char1">P</span></span><span class="char3"><span class="char1">H</span></span><span
+            class="char4"><span class="char1">O</span></span><span class="char5"><span
+              class="char1">H</span></span><span class="char6"><span class="char1">E</span></span><span
+            class="char7"><span class="char1">1</span></span><span class="char8"><span class="char1">3</span></span>
+        </span>
+        <span class="word2">
+          <span class="char1"><span class="char1">C</span></span><span class="char2"><span
+              class="char1">O</span></span><span class="char3"><span class="char1">M</span></span><span
+            class="char4"><span class="char1">I</span></span>
+          <span class="char5"><span class="char1">N</span></span>
+          <span class="char6"><span class="char1">G</span></span>
+        </span>
+      </h2>
+    </div>
+    <div class="scene02">
+      <div class="animation-wrapper">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+      </div>
+    </div>
+
+    <div class="scene03 perspective">
+      <div class="iPhone iPhone-1">
+        <div class="back">
+          <div class="camera-group">
+            <div class="camera camera-wide">
+              <div></div>
             </div>
-            <div class="logo-box">
-              <div class="logo"></div>
+            <div class="camera camera-tele-photo">
+              <div></div>
             </div>
-          </div>
-          <div class="front">
-            <div class="front-camera-container">
-              <div class="front-camera"></div>
-              <div class="receiver"></div>
+            <div class="camera camera-ultra-wide">
+              <div></div>
             </div>
-            <div class="screen">
-              <div class="circle-4"></div>
-              <div class="circle-3"></div>
-              <div class="circle-2"></div>
-              <div class="circle-1"></div>
-            </div>
+            <div class="flash"></div>
+            <div class="mic"></div>
+            <div class="lidar"></div>
           </div>
-          <div class="left side">
-            <div class="switch2 switch-extra"></div>
-            <div class="switch switch-extra"></div>
-            <div class="switch switch-extra" style="top: 140px"></div>
-            <div class="slot"></div>
-          </div>
-          <div class="right side">
-            <div
-              class="switch switch-extra"
-              style="top: 120px; height: 70px"
-            ></div>
-          </div>
-          <div class="top side2"></div>
-          <div class="bottom side2">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot m-r-10"></div>
-            <div class="dot"></div>
-            <div class="dot" style="width: 36px"></div>
-            <div class="dot m-r-10"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="lt-radius">
-            <div class="pad-radius0 pad-radius"></div>
-            <div class="pad-radius1 pad-radius"></div>
-            <div class="pad-radius2 pad-radius"></div>
-            <div class="pad-radius3 pad-radius"></div>
-            <div class="pad-radius4 pad-radius"></div>
-            <div class="pad-radius5 pad-radius"></div>
-            <div class="pad-radius6 pad-radius"></div>
-            <div class="pad-radius7 pad-radius"></div>
-            <div class="pad-radius8 pad-radius"></div>
-            <div class="pad-radius9 pad-radius"></div>
-          </div>
-          <div class="lt-radius rt-radius">
-            <div class="pad-radius0 pad-radius"></div>
-            <div class="pad-radius1 pad-radius"></div>
-            <div class="pad-radius2 pad-radius"></div>
-            <div class="pad-radius3 pad-radius"></div>
-            <div class="pad-radius4 pad-radius"></div>
-            <div class="pad-radius5 pad-radius"></div>
-            <div class="pad-radius6 pad-radius"></div>
-            <div class="pad-radius7 pad-radius"></div>
-            <div class="pad-radius8 pad-radius"></div>
-            <div class="pad-radius9 pad-radius"></div>
-          </div>
-          <div class="lt-radius lb-radius">
-            <div class="pad-radius0 pad-radius"></div>
-            <div class="pad-radius1 pad-radius"></div>
-            <div class="pad-radius2 pad-radius"></div>
-            <div class="pad-radius3 pad-radius"></div>
-            <div class="pad-radius4 pad-radius"></div>
-            <div class="pad-radius5 pad-radius"></div>
-            <div class="pad-radius6 pad-radius"></div>
-            <div class="pad-radius7 pad-radius"></div>
-            <div class="pad-radius8 pad-radius"></div>
-            <div class="pad-radius9 pad-radius"></div>
-          </div>
-          <div class="lt-radius rb-radius">
-            <div class="pad-radius0 pad-radius"></div>
-            <div class="pad-radius1 pad-radius"></div>
-            <div class="pad-radius2 pad-radius"></div>
-            <div class="pad-radius3 pad-radius"></div>
-            <div class="pad-radius4 pad-radius"></div>
-            <div class="pad-radius5 pad-radius"></div>
-            <div class="pad-radius6 pad-radius"></div>
-            <div class="pad-radius7 pad-radius"></div>
-            <div class="pad-radius8 pad-radius"></div>
-            <div class="pad-radius9 pad-radius"></div>
+          <div class="logo-box">
+            <div class="logo"></div>
           </div>
         </div>
-        <div class="fade-in-mask"></div>
+        <div class="front">
+          <div class="front-camera-container">
+            <div class="front-camera"></div>
+            <div class="receiver"></div>
+          </div>
+          <div class="screen">
+            <div class="circle-4"></div>
+            <div class="circle-3"></div>
+            <div class="circle-2"></div>
+            <div class="circle-1"></div>
+            <div class="screen-locked">
+              <div class="screen-locked-time">12:42</div>
+              <div class="screen-locked-date">Thursday, August 11</div>
+              <div class="screen-locked-reminder">
+                <div></div>
+                <div>Made by ZAF & WCJ</div>
+              </div>
+              <div class="screen-locked-slide">
+                <div></div>
+                slide to unlock
+              </div>
+              <div class="screen-locked-bottom"></div>
+            </div>
+          </div>
+          <div class="screen screen-home">
+            <div class="circle-4"></div>
+            <div class="circle-3"></div>
+            <div class="circle-2"></div>
+            <div class="circle-1"></div>
+            <div class="siri-icon">
+              <div class="icon"></div>
+              <p>Siri</p>
+            </div>
+          </div>
+          <div class="screen screen-siri">
+            <siv class="talk-container">
+              <p>Hi, Siri</p>
+              <p>我在</p>
+              <p>最牛逼的数字资产交易所是哪个</p>
+              <p>OKEx</p>
+              <p>最牛逼的区块链浏览器是哪个</p>
+              <p>OKLink</p>
+            </siv>
+            <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                <path id="siri-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+                <use xlink:href="#siri-wave" x="48" y="0" fill="rgba(135,206,235,0.7)" />
+                <use xlink:href="#siri-wave" x="48" y="3" fill="rgba(255,255,0,0.5)" />
+                <use xlink:href="#siri-wave" x="48" y="5" fill="rgba(170,255,0,0.3)" />
+                <use xlink:href="#siri-wave" x="48" y="8" fill="black" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="left side">
+          <div class="switch2 switch-extra"></div>
+          <div class="switch switch-extra"></div>
+          <div class="switch switch-extra" style="top: 140px"></div>
+          <div class="slot"></div>
+        </div>
+        <div class="right side">
+          <div class="switch switch-extra" style="top: 120px; height: 70px"></div>
+        </div>
+        <div class="top side2"></div>
+        <div class="bottom side2">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot m-r-10"></div>
+          <div class="dot"></div>
+          <div class="dot" style="width: 36px"></div>
+          <div class="dot m-r-10"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="lt-radius">
+          <div class="phone-radius0 phone-radius"></div>
+          <div class="phone-radius1 phone-radius"></div>
+          <div class="phone-radius2 phone-radius"></div>
+          <div class="phone-radius3 phone-radius"></div>
+          <div class="phone-radius4 phone-radius"></div>
+          <div class="phone-radius5 phone-radius"></div>
+          <div class="phone-radius6 phone-radius"></div>
+          <div class="phone-radius7 phone-radius"></div>
+          <div class="phone-radius8 phone-radius"></div>
+          <div class="phone-radius9 phone-radius"></div>
+        </div>
+        <div class="lt-radius rt-radius">
+          <div class="phone-radius0 phone-radius"></div>
+          <div class="phone-radius1 phone-radius"></div>
+          <div class="phone-radius2 phone-radius"></div>
+          <div class="phone-radius3 phone-radius"></div>
+          <div class="phone-radius4 phone-radius"></div>
+          <div class="phone-radius5 phone-radius"></div>
+          <div class="phone-radius6 phone-radius"></div>
+          <div class="phone-radius7 phone-radius"></div>
+          <div class="phone-radius8 phone-radius"></div>
+          <div class="phone-radius9 phone-radius"></div>
+        </div>
+        <div class="lt-radius lb-radius">
+          <div class="phone-radius0 phone-radius"></div>
+          <div class="phone-radius1 phone-radius"></div>
+          <div class="phone-radius2 phone-radius"></div>
+          <div class="phone-radius3 phone-radius"></div>
+          <div class="phone-radius4 phone-radius"></div>
+          <div class="phone-radius5 phone-radius"></div>
+          <div class="phone-radius6 phone-radius"></div>
+          <div class="phone-radius7 phone-radius"></div>
+          <div class="phone-radius8 phone-radius"></div>
+          <div class="phone-radius9 phone-radius"></div>
+        </div>
+        <div class="lt-radius rb-radius">
+          <div class="phone-radius0 phone-radius"></div>
+          <div class="phone-radius1 phone-radius"></div>
+          <div class="phone-radius2 phone-radius"></div>
+          <div class="phone-radius3 phone-radius"></div>
+          <div class="phone-radius4 phone-radius"></div>
+          <div class="phone-radius5 phone-radius"></div>
+          <div class="phone-radius6 phone-radius"></div>
+          <div class="phone-radius7 phone-radius"></div>
+          <div class="phone-radius8 phone-radius"></div>
+          <div class="phone-radius9 phone-radius"></div>
+        </div>
       </div>
-    </section>
-  </body>
+      <div class="iPhone iPhone-2">
+        <div class="back">
+          <div class="camera-group">
+            <div class="camera camera-wide">
+              <div></div>
+            </div>
+            <div class="camera camera-tele-photo">
+              <div></div>
+            </div>
+            <div class="camera camera-ultra-wide">
+              <div></div>
+            </div>
+            <div class="flash"></div>
+            <div class="mic"></div>
+            <div class="lidar"></div>
+          </div>
+          <div class="logo-box">
+            <div class="logo"></div>
+          </div>
+        </div>
+        <div class="front">
+          <div class="front-camera-container">
+            <div class="front-camera"></div>
+            <div class="receiver"></div>
+          </div>
+          <div class="screen">
+            <div class="circle-4"></div>
+            <div class="circle-3"></div>
+            <div class="circle-2"></div>
+            <div class="circle-1"></div>
+          </div>
+        </div>
+        <div class="left side">
+          <div class="switch2 switch-extra"></div>
+          <div class="switch switch-extra"></div>
+          <div class="switch switch-extra" style="top: 140px;"></div>
+          <div class="slot"></div>
+        </div>
+        <div class="right side">
+          <div class="switch switch-extra" style="top: 120px;height: 70px;"></div>
+        </div>
+        <div class="top side2"></div>
+        <div class="bottom side2">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot m-r-10"></div>
+          <div class="dot"></div>
+          <div class="dot" style="width: 36px;"></div>
+          <div class="dot m-r-10"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="lt-radius">
+          <div class="phone-radius0 phone-radius"></div>
+          <div class="phone-radius1 phone-radius"></div>
+          <div class="phone-radius2 phone-radius"></div>
+          <div class="phone-radius3 phone-radius"></div>
+          <div class="phone-radius4 phone-radius"></div>
+          <div class="phone-radius5 phone-radius"></div>
+          <div class="phone-radius6 phone-radius"></div>
+          <div class="phone-radius7 phone-radius"></div>
+          <div class="phone-radius8 phone-radius"></div>
+          <div class="phone-radius9 phone-radius"></div>
+        </div>
+        <div class="lt-radius rt-radius">
+          <div class="phone-radius0 phone-radius"></div>
+          <div class="phone-radius1 phone-radius"></div>
+          <div class="phone-radius2 phone-radius"></div>
+          <div class="phone-radius3 phone-radius"></div>
+          <div class="phone-radius4 phone-radius"></div>
+          <div class="phone-radius5 phone-radius"></div>
+          <div class="phone-radius6 phone-radius"></div>
+          <div class="phone-radius7 phone-radius"></div>
+          <div class="phone-radius8 phone-radius"></div>
+          <div class="phone-radius9 phone-radius"></div>
+        </div>
+        <div class="lt-radius lb-radius">
+          <div class="phone-radius0 phone-radius"></div>
+          <div class="phone-radius1 phone-radius"></div>
+          <div class="phone-radius2 phone-radius"></div>
+          <div class="phone-radius3 phone-radius"></div>
+          <div class="phone-radius4 phone-radius"></div>
+          <div class="phone-radius5 phone-radius"></div>
+          <div class="phone-radius6 phone-radius"></div>
+          <div class="phone-radius7 phone-radius"></div>
+          <div class="phone-radius8 phone-radius"></div>
+          <div class="phone-radius9 phone-radius"></div>
+        </div>
+        <div class="lt-radius rb-radius">
+          <div class="phone-radius0 phone-radius"></div>
+          <div class="phone-radius1 phone-radius"></div>
+          <div class="phone-radius2 phone-radius"></div>
+          <div class="phone-radius3 phone-radius"></div>
+          <div class="phone-radius4 phone-radius"></div>
+          <div class="phone-radius5 phone-radius"></div>
+          <div class="phone-radius6 phone-radius"></div>
+          <div class="phone-radius7 phone-radius"></div>
+          <div class="phone-radius8 phone-radius"></div>
+          <div class="phone-radius9 phone-radius"></div>
+        </div>
+      </div>
+      <div class="fade-in-mask"></div>
+    </div>
+    <div class="text-container">
+      <p class="start-text">
+        iPhone 13
+      </p>
+      <div class="introduce-text-container-1">
+        <div class="introduce-text-1-3">
+          <p>让我们仔细看看</p>
+          <p>支持6G的iPhone13吧</p>
+        </div>
+        <div class="introduce-text-3-5">
+          <p>他有着令人眼前一亮的全新设计 </p>
+        </div>
+        <div class="introduce-text-5-7">
+          <p>平滑的边角</p>
+        </div>
+        <div class="introduce-text-7-9">
+          <p>令铝金属边框和玻璃背板</p>
+          <p>从前至后 相得益彰</p>
+        </div>
+        <div class="introduce-text-9-11">
+          <p>打造出浑然一体的独特结构</p>
+        </div>
+        <div class="introduce-text-11-13">
+          <p>iPhone从内到外都经过了重新架构</p>
+        </div>
+        <div class="introduce-text-13-15">
+          <p>从而能将各种全新技术</p>
+          <p>集合于更紧凑的设计中</p>
+        </div>
+        <div class="introduce-text-15-17">
+          <p>iPhone的设计</p>
+          <p>充分考虑了6G的各项需求</p>
+        </div>
+        <div class="introduce-text-17-19">
+          <p>其中包括全新天线的位置</p>
+          <p>现在围绕着铝金属边框</p>
+        </div>
+      </div>
+      <div class="typing-container introduce-text-container-2">
+        <p> iPhone 13 配备了和 iPhone 12 一样的 </p>
+        <p> 6.1英寸屏幕大小 </p>
+        <p> 但是我们减少了屏幕边框 </p>
+        <p> 来打造更小的 iPhone </p>
+      </div>
+      <div class="typing-container introduce-text-container-3">
+        <p> A20人工智能芯片 </p>
+        <p> 集所用功能于一身 </p>
+        <p> 且透明 </p>
+      </div>
+      <div class="typing-container introduce-text-container-4">
+        <p> 可旋转顶部刘海 </p>
+        <p> 120度超大开合角度 </p>
+        <p> 超大屏幕完整展现 </p>
+      </div>
+      <div class="typing-container introduce-text-container-5">
+        <p> Super Super OLED 真·全面屏 </p>
+        <p> 分辨率 19200 * 10800 </p>
+        <p> 46000ppi 666Hz刷新率 </p>
+        <p> 视觉盛宴，尽在iPhone 13 </p>
+      </div>
+      <div class="typing-container introduce-text-container-6">
+        <p> 平平无奇的听筒 </p>
+        <p> 听不出什么花来 </p>
+        <p> 和上一代差不多的前置摄像头 </p>
+        <p> 没做什么升级 </p>
+        <p> 只有单身的人才会自己拍照 </p>
+      </div>
+      <div class="typing-container introduce-text-container-7">
+        <p> 超广角摄像头 </p>
+        <p> 180度超大角度 </p>
+        <p> 可以让你拍的更广 </p>
+      </div>
+      <div class="typing-container introduce-text-container-8">
+        <p> 显微镜头 </p>
+        <p> 6万无敌变焦 </p>
+        <p> 可以让你拍的更大 </p>
+      </div>
+      <div class="typing-container introduce-text-container-8">
+        <p> 显微镜头 </p>
+        <p> 6万无敌变焦 </p>
+        <p> 可以让你拍的更大 </p>
+      </div>
+      <div class="typing-container introduce-text-container-9">
+        <p> 在比拼参数的时代 </p>
+        <p> 我们做就要做到极致 </p>
+        <p> 首发火星科技 </p>
+        <p> 地球参数无法衡量的终极主射 </p>
+        <p> 可以帮你 </p>
+        <p> 。 </p>
+        <p> 。 </p>
+        <p> 。 </p>
+        <p> 拍照 </p>
+      </div>
+      <div class="typing-container introduce-text-container-10">
+        <p> 闪光灯 </p>
+      </div>
+      <div class="typing-container introduce-text-container-11">
+        <p> 一个孔 </p>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>
