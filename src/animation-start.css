@@ -1,0 +1,87 @@
+.start-btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.start-text {
+  margin-left: 500px;
+  font-size: 100px;
+  font-weight: 500;
+  opacity: 0;
+  color: white;
+}
+
+.start-btn:checked~.perspective .iPhone-1 {
+  animation: start-animation 20s linear;
+  transform: rotateX(390deg) rotateY(-330deg) rotateZ(-15deg) translateX(-150%);
+}
+
+@keyframes start-animation {
+  0% {
+    transform: rotateZ(0deg) scale(1) translateY(50vh);
+  }
+
+  10% {
+    transform: rotateX(30deg) rotateY(30deg) rotateZ(-15deg);
+  }
+
+  15% {
+    transform: rotateX(30deg) rotateY(30deg) rotateZ(-15deg);
+  }
+
+  20% {
+    transform: rotateY(180deg);
+  }
+
+  22.5% {
+    transform: rotateY(90deg) scale3d(1.5, 1.5, 1.5) translateX(100%) translateY(50%);
+  }
+
+  35% {
+    transform: rotateY(0deg) scale3d(2, 2, 2) translateX(0) translateY(50%);
+  }
+
+  47.5% {
+    transform: rotateY(-90deg) scale3d(1, 1, 1) translateX(-100%) translateY(50%);
+  }
+
+  65% {
+    transform: rotateX(105deg) rotateY(-168deg) rotateZ(-40deg);
+  }
+
+  80% {
+    transform: rotateX(360deg) rotateY(-180deg) rotateZ(0) translateX(-50%) translateY(50%) scale3d(1.5, 1.5, 1.5);
+  }
+
+  85% {
+    transform: rotateX(360deg) rotateY(-180deg) rotateZ(0) translateX(-50%) translateY(50%) scale3d(1.5, 1.5, 1.5);
+  }
+
+  95% {
+    transform: rotateX(390deg) rotateY(-330deg) rotateZ(-15deg);
+  }
+
+  100% {
+    transform: rotateX(390deg) rotateY(-330deg) rotateZ(-15deg) translateX(-150%);
+  }
+}
+
+.start-btn:checked~.perspective .fade-in-mask {
+  animation: opacity 2s;
+  opacity: 0;
+}
+
+.start-btn:checked~.text-container .start-text {
+  transition: opacity 1s ease 20s;
+  opacity: 1;
+}
+
+.start-btn:checked {
+  display: none;
+}

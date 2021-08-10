@@ -1,0 +1,85 @@
+.siri-btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 666;
+}
+
+.siri-btn:checked~.perspective .iPhone-1 .screen-siri {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  border-radius: 46px;
+}
+
+
+.siri-btn:checked~.perspective .iPhone-1 .screen-siri .talk-container p {
+  color: #AAB1BF;
+}
+
+.siri-btn:checked~.perspective .iPhone-1 .screen-siri .talk-container p:nth-of-type(1) {
+  transition: color 0.1s ease 3s;
+}
+
+.siri-btn:checked~.perspective .iPhone-1 .screen-siri .talk-container p:nth-of-type(2) {
+  transition: color 0.1s ease 5s;
+}
+
+.siri-btn:checked~.perspective .iPhone-1 .screen-siri .talk-container p:nth-of-type(3) {
+  transition: color 0.1s ease 7s;
+}
+
+.siri-btn:checked~.perspective .iPhone-1 .screen-siri .talk-container p:nth-of-type(4) {
+  transition: color 0.1s ease 9s;
+}
+
+.siri-btn:checked~.perspective .iPhone-1 .screen-siri .talk-container p:nth-of-type(5) {
+  transition: color 0.1s ease 11s;
+}
+
+.siri-btn:checked~.perspective .iPhone-1 .screen-siri .talk-container p:nth-of-type(6) {
+  transition: color 0.1s ease 13s;
+}
+
+.waves {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  height: 3vh;
+}
+
+.parallax>use {
+  animation: wave 5s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-duration: 0.5s;
+}
+
+.parallax>use:nth-child(2) {
+  animation-duration: 0.8s;
+}
+
+.parallax>use:nth-child(3) {
+  animation-duration: 1.2s;
+}
+
+.parallax>use:nth-child(4) {
+  animation-duration: 1.4s;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
