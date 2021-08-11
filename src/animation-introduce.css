@@ -18,6 +18,21 @@
   opacity: 0;
 }
 
+@keyframes perspective-flash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.introduce-btn:checked~.perspective {
+  animation-name: perspective-flash;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
 .introduce-btn:checked~.perspective .iPhone-1 {
   animation: introduce-animation-iPhone-1 100s linear;
   transform: translate(0);
@@ -343,6 +358,7 @@
   border-radius: 20px;
   position: absolute;
   opacity: 0;
+  width: 360px;
 }
 
 .typing-container::after {
@@ -355,7 +371,7 @@
   white-space: nowrap;
   overflow: hidden;
   color: transparent;
-  min-width: 200px;
+  width: 0;
 }
 
 @keyframes show-text-container {
@@ -382,7 +398,6 @@
 @keyframes blink-caret {
   50% {
     border-right: 1px solid #e3a541;
-    ;
   }
 }
 
@@ -396,31 +411,35 @@
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-2 p:nth-of-type(1) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(16, end) 22.5s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 22.5s;
   animation-delay: 22.5s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-2 p:nth-of-type(2) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 22.75s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 22.75s;
   animation-delay: 22.75s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-2 p:nth-of-type(3) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 23s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 23s;
   animation-delay: 23;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-2 p:nth-of-type(4) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 23.25s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 23.25s;
   animation-delay: 23.25s;
   color: #e3a541;
+  width: 260px;
 }
 
 
@@ -434,24 +453,27 @@
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-3 p:nth-of-type(1) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 28s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 28s;
   animation-delay: 28s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-3 p:nth-of-type(2) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 28.25s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 28.25s;
   animation-delay: 28.25s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-3 p:nth-of-type(3) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 28.5s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 28.5s;
   animation-delay: 28.5s;
   color: #e3a541;
+  width: 260px;
 }
 
 
@@ -465,24 +487,27 @@
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-4 p:nth-of-type(1) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 31s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 31s;
   animation-delay: 31s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-4 p:nth-of-type(2) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 31.25s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 31.25s;
   animation-delay: 31.25s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-4 p:nth-of-type(3) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 31.5s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 31.5s;
   animation-delay: 31.5s;
   color: #e3a541;
+  width: 260px;
 }
 
 
@@ -496,31 +521,35 @@
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-5 p:nth-of-type(1) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 36s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 36s;
   animation-delay: 36s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-5 p:nth-of-type(2) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 36.25s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 36.25s;
   animation-delay: 36.25s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-5 p:nth-of-type(3) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 36.5s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 36.5s;
   animation-delay: 36.5s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-5 p:nth-of-type(4) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
-  transition: color .25s ease 3.675s;
+  animation: typing 2s steps(15, end) 36.75s, blink-caret .1s step-end 20 alternate;
+  transition: color .25s ease 36.75s;
   animation-delay: 36.75s;
   color: #e3a541;
+  width: 260px;
 }
 
 
@@ -534,38 +563,43 @@
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-6 p:nth-of-type(1) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 39s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 39s;
   animation-delay: 39s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-6 p:nth-of-type(2) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 39.25s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 39.25s;
   animation-delay: 39.25s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-6 p:nth-of-type(3) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 39.5s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 39.5s;
   animation-delay: 39.5s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-6 p:nth-of-type(4) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 39.75s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 39.75s;
   animation-delay: 39s.75;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-6 p:nth-of-type(5) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 40s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 40s;
   animation-delay: 40s;
   color: #e3a541;
+  width: 260px;
 }
 
 
@@ -579,24 +613,27 @@
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-7 p:nth-of-type(1) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 45s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 45s;
   animation-delay: 45s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-7 p:nth-of-type(2) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 45.25s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 45.25s;
   animation-delay: 45.25s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-7 p:nth-of-type(3) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 45.5s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 45.5s;
   animation-delay: 45.5s;
   color: #e3a541;
+  width: 260px;
 }
 
 
@@ -610,24 +647,27 @@
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-8 p:nth-of-type(1) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 48s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 48s;
   animation-delay: 48s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-8 p:nth-of-type(2) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 48.25s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 48.25s;
   animation-delay: 48.25s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-8 p:nth-of-type(3) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 48.5s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 48.5s;
   animation-delay: 48.5s;
   color: #e3a541;
+  width: 260px;
 }
 
 
@@ -641,66 +681,75 @@
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-9 p:nth-of-type(1) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 51s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 51s;
   animation-delay: 51s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-9 p:nth-of-type(2) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 51.25s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 51.25s;
   animation-delay: 51.25s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-9 p:nth-of-type(3) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 51.5s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 51.5s;
   animation-delay: 51.5s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-9 p:nth-of-type(4) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 51.75s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 51.75s;
   animation-delay: 51.75s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-9 p:nth-of-type(5) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 52s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 52s;
   animation-delay: 52s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-9 p:nth-of-type(6) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 53s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 53s;
   animation-delay: 53s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-9 p:nth-of-type(7) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 54s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 54s;
   animation-delay: 54s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-9 p:nth-of-type(8) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 55s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 55s;
   animation-delay: 55s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-9 p:nth-of-type(9) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 57s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 57s;
   animation-delay: 57s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-text-container-10 {
@@ -713,10 +762,11 @@
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-10 p:nth-of-type(1) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
-  transition: color .25s ease 58;
+  animation: typing 2s steps(15, end) 58s, blink-caret .1s step-end 20 alternate;
+  transition: color .25s ease 58s;
   animation-delay: 58s;
   color: #e3a541;
+  width: 260px;
 }
 
 
@@ -730,10 +780,11 @@
 }
 
 .introduce-btn:checked~.text-container .introduce-text-container-11 p:nth-of-type(1) {
-  animation: typing 0.5s steps(15, end), blink-caret .01s step-end 50 alternate;
+  animation: typing 2s steps(15, end) 58.5s, blink-caret .1s step-end 20 alternate;
   transition: color .25s ease 58.5s;
   animation-delay: 58.5s;
   color: #e3a541;
+  width: 260px;
 }
 
 .introduce-btn:checked {
